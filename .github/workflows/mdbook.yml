@@ -36,9 +36,13 @@ jobs:
       - uses: taiki-e/cache-cargo-install-action@v2
         with:
           tool: mdbook@0.5.2
-      - uses: taiki-e/cache-cargo-install-action@v2
+      - name: Install mdbook-linkcheck
+        uses: baptiste0928/cargo-install@v3
+        # Temporarily pull the fix for https://github.com/Michael-F-Bryan/mdbook-linkcheck/pull/98
         with:
-          tool: mdbook-linkcheck@0.7.7
+          crate: mdbook-linkcheck
+          git: https://github.com/schilkp/mdbook-linkcheck
+          rev: ed981be6ded11562e604fff290ae4c08f1c419c5
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
