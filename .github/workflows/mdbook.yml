@@ -4,9 +4,12 @@
 #
 name: Deploy mdBook site to Pages
 
+# Runs on pushes and PRs targeting the default branch
 on:
-  # Runs on pushes targeting the default branch
   push:
+    branches: ["main"]
+
+  pull_request:
     branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -48,6 +51,7 @@ jobs:
 
   # Deployment job
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
