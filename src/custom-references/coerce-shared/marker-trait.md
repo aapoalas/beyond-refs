@@ -32,7 +32,7 @@ struct CustomMarker<'a>(PhantomData<&'a mut ()>);
 struct CustomMarkerRef<'a>(PhantomData<&'a ()>);
 ```
 
-As with [the Reborrow marker trait](./reborrow-marker-trait.md), some
+As with [the Reborrow marker trait](../reborrow/marker-trait.md), some
 limitations are placed on the trait although this time most of them are
 expressed on the trait directly.
 

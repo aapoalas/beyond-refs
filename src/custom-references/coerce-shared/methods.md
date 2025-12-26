@@ -10,11 +10,10 @@ trait CoerceShared {
 }
 ```
 
-This approach suffers from the downsides as
-[method-based Reborrow does](./reborrow-methods.md). In addition, it is not
-possible to fix the lifetime issues by simply not calling the `fn coerce_shared`
-method as that would mean trying to use a `Self` type where `Self::Target` is
-required.
+This approach suffers from the downsides as [method-based Reborrow
+does](../reborrow/methods.md). In addition, it is not possible to fix the
+lifetime issues by simply not calling the `fn coerce_shared` method as that
+would mean trying to use a `Self` type where `Self::Target` is required.
 
 The way to fix this is to define an `Into<Self::Target>` method that consumes
 the source exclusive reference and produces a shared reference with the same
