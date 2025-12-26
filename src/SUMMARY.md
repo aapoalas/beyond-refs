@@ -9,7 +9,7 @@
     - [Marker types](./reborrow-marker-types.md)
     - [Exclusive reference collections](./reborrow-reference-collections.md)
     - [Marker trait approach](./reborrow-marker-trait.md)
-    - [Method-based approach](./reborrow-method.md)
+    - [Method-based approach](./reborrow-methods.md)
   - [CoerceShared](./coerce-shared.md)
     - [Marker trait approach](./coerce-shared-marker-trait.md)
     - [Method-based approach](./coerce-shared-methods.md)
