@@ -1,6 +1,8 @@
 # Summary
 
 - [Custom references](./custom-refs.md)
+  - [Field representing types](./field-representing-types.md)
+  - [Projections](./projection-types.md)
   - [HasPlace proposal](./has-place.md)
   - [Field projections](./field-projections.md)
   - [Reborrow](./reborrow/index.md)
