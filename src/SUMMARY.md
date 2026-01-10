@@ -22,3 +22,7 @@
   - [Out pointers](./out-pointers.md)
   - [Placing](./placing.md)
   - [Guaranteed value emplacement](./guaranteed-emplacement.md)
+- [Running Examples](./examples.md)
+  - [ArcBox](./examples/arcbox.md)
+  - [UniqueArc](./examples/unique-arc.md)
+  - [SharedMutableRef](./examples/shared-mutable-ref.md)
