@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    mdbook-backlinks.url = "github:nadrieril/mdbook-backlinks";
   };
 
   outputs = inputs @ { self, ... }:
@@ -37,6 +38,7 @@
           packages = [
             pkgs.mdbook
             mdbook-linkcheck
+            inputs.mdbook-backlinks.packages.${system}.default
           ];
         };
       });

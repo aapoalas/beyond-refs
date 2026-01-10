@@ -46,6 +46,12 @@ jobs:
           crate: mdbook-linkcheck
           git: https://github.com/schilkp/mdbook-linkcheck
           rev: ed981be6ded11562e604fff290ae4c08f1c419c5
+      - name: Install mdbook-backlinks
+        uses: baptiste0928/cargo-install@v3
+        with:
+          crate: mdbook-backlinks
+          git: https://github.com/Nadrieril/mdbook-backlinks
+          rev: 526e94fd747d712c75baea840d23f513233e0927
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
